@@ -4,7 +4,7 @@ I am  Hilal Öngel. I am a Sophomore Computer Science student at Sabanci Univers
 
 ## 1.	Motivation
 
-The film industry experiences fluctuations in moviegoer attendance throughout the year. Understanding how seasons affect movie preferences and number of moviegoers could provide valuable insights for movie studios, distributors, and marketers. Additionally, this could be an entertaining and inspiring project topic for me since I am interested in. This project aims to analyze the relationship between seasons, the number of moviegoers, and the popularity of different movie genres in Turkey.
+The film industry experiences fluctuations in moviegoer attendance throughout the year. Understanding how seasons affect movie preferences and number of moviegoers could provide valuable insights for movie studios, distributors, and marketers. Additionally, this could be an entertaining and inspiring project topic for me since I am interested in.
 
 ##  2.	Data Sources
 
