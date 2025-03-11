@@ -39,7 +39,6 @@ o Movie genre classification
 
 **• Hypothesis 2:** Certain movie genres are more popular during specific seasons (e.g., summer for comedy movies, winter for drama movies).
 
-**• Hypothesis 3:** There is a positive correlation between warmer weather and higher movie attendance, especially during the summer.
 
 ### Correlation Analysis: 
 
