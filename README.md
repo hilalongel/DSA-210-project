@@ -21,11 +21,11 @@ o Movie genre classification
 
 ## 3.	Data Collection 
    
-• Extract moviegoer data and the number of viewers from Box Office Turkey.
+• Extract weekly moviegoer data from Box Office Turkey. Extract weekly top 10 movies and numbers of movigoers for these movies.
 
 • Find movie genres from IMDb.
 
-• Categorize data into four seasons.
+• Categorize weekly data into four seasons of Turkey.
 
 
 ## 4. Data Analysis 
@@ -56,4 +56,3 @@ o Movie genre classification
 
 • Heatmaps: Display correlations between seasons, viewership, and genres.
 
-![image](https://github.com/user-attachments/assets/178bb691-86b5-4d43-a042-e31790f6c4ad)
