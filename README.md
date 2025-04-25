@@ -34,7 +34,7 @@ Additionally, this topic is personally meaningful for me as I am interested in *
 ---
 
 ## Data Collection and Processing
-- Extract weekly **Top 10 movie data** from Box Office Turkey, including the number of moviegoers.
+- Extract weekly **Top 10 movie data** of 2022, 2023, 2024 from Box Office Turkey, including the number of moviegoers.
 - Retrieve **movie genre information** from TMDB API.
 - Categorize weekly data into four Turkish seasons:
   - **Winter:** Weeks 1–8 and 49–52  
@@ -43,7 +43,7 @@ Additionally, this topic is personally meaningful for me as I am interested in *
   - **Autumn:** Weeks 35–48  
 
 ---
-##  EDA (Exploratory Data Analysis) Methods Used
+##  EDA (Exploratory Data Analysis) Methods 
 
 This project applies several **Exploratory Data Analysis (EDA)** techniques to understand the relationship between seasons, movie attendance, and genre popularity.
 
