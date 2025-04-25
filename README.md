@@ -84,12 +84,12 @@ This project applies several **Exploratory Data Analysis (EDA)** techniques to u
 - **F-statistic:** 8.08  
 - **p-value:** 0.0000
 - Since the p-value is below 0.05, the null hypothesis was rejected, it is confirmed that **seasonal differences in average weekly movie attendance are statistically significant**, which supports **Hypothesis 1**.
-- 
+  
 <img width="648" alt="Ekran Resmi 2025-04-25 20 52 00" src="https://github.com/user-attachments/assets/08691692-d079-4634-b1a6-3d90c3067830" />
 
-The **F-statistic** reflects the ratio of between-group variance (seasonal differences) to within-group variance (weekly fluctuations).  
-The result indicates that at least two seasons significantly differ in their average audience numbers.  
-This conclusion was visually supported by the **boxplot**, showing **Winter** as the season with the highest median weekly attendance and relatively low variability.
+- The **F-statistic** reflects the ratio of between-group variance (seasonal differences) to within-group variance (weekly fluctuations).  
+- The result indicates that at least two seasons significantly differ in their average audience numbers.  
+- This conclusion was visually supported by the **boxplot**, showing **Winter** as the season with the highest median weekly attendance and relatively low variability.
 
 <img width="723" alt="Ekran Resmi 2025-04-25 20 52 45" src="https://github.com/user-attachments/assets/9a9234a2-46ed-4ca2-aca9-f26609fa7f23" />
 
