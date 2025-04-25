@@ -112,17 +112,6 @@ Although no formal statistical test (e.g., chi-square) was applied to genre-seas
 Future work may apply statistical tests to validate these patterns formally.
 
 ---
-
-##  Data Visualizations
-
--  **Bar Charts:** Show average weekly movie attendance by season.
--  **Boxplots:** Show weekly attendance distribution across seasons, supporting the variance analysis.
--  **Heatmaps:** Visualize total viewership per genre across seasons.
--  **Stacked Bar Charts:** Display how each genre contributes to total viewership within each season.
-
-
-
----
 ##  Notes
 
 This analysis focuses on the **Top 10 weekly movies**.  
