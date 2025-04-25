@@ -13,6 +13,14 @@ Understanding how **seasons affect movie preferences and audience numbers** can 
 Additionally, this topic is personally meaningful to me as I am interested in **data analysis, cinema, and human behavior patterns**.
 
 ---
+## Hypothesis
+
+- ** Hypothesis 1:** The average number of moviegoers differs significantly across seasons.  
+
+- ** Hypothesis 2:** Certain movie genres are more popular during specific seasons  
+  (e.g., **Action** and **Adventure** during Summer, **Drama** and **Thriller** during Winter).
+
+---
 
 ## Data Sources
 - **Box Office Turkey**  
@@ -35,7 +43,7 @@ Additionally, this topic is personally meaningful to me as I am interested in **
   - **Autumn:** Weeks 35–48  
 
 ---
-## 🔎 EDA (Exploratory Data Analysis) Methods Used
+##  EDA (Exploratory Data Analysis) Methods Used
 
 This project applies several **Exploratory Data Analysis (EDA)** techniques to understand the relationship between seasons, movie attendance, and genre popularity.
 
@@ -50,8 +58,8 @@ This project applies several **Exploratory Data Analysis (EDA)** techniques to u
 - **Exploding multi-genre entries** so that each genre appears in a separate row.
 - **Season categorization**: Assigned each week to one of the four seasons (Winter, Spring, Summer, Autumn).
 
-###  3. Descriptive Statistics
-- Used basic statistical measures like **mean, sum, and median**.
+###  3. Statistics
+- Use of statistical measures like **mean, sum, and median**.
 - Supported the identification of seasonal fluctuations and genre preferences.
 
 ###  4. Data Visualization
@@ -62,25 +70,20 @@ This project applies several **Exploratory Data Analysis (EDA)** techniques to u
 - **Tools:** `matplotlib`, `seaborn`.
 
 ###  5. Statistical Testing (Supporting EDA)
-- Applied **one-way ANOVA (Analysis of Variance)** to statistically test whether the seasonal differences in attendance are significant.
+- Applied **ANOVA (Analysis of Variance)** to statistically test whether the seasonal differences in attendance are significant.
 - Interpreted **F-statistic** and **p-value** to confirm or reject the null hypothesis.
 - This statistical testing strengthened the insights obtained from the visual analysis.
 ---
 
-## Hypothesis
 
-- ** Hypothesis 1:** The average number of moviegoers differs significantly across seasons.  
 
-- ** Hypothesis 2:** Certain movie genres are more popular during specific seasons  
-  (e.g., **Action** and **Adventure** during Summer, **Drama** and **Thriller** during Winter).
 
-### Difference Testing Approach:
 ##  Difference Testing Approach
 
 - One-way **ANOVA (Analysis of Variance)** was applied to test whether the average weekly movie attendance differs across seasons.
 - **F-statistic:** 8.08  
 - **p-value:** 0.0000
-- Since the p-value is below 0.05, the null hypothesis was rejected, confirming that **seasonal differences in average weekly movie attendance are statistically significant**, which supports **Hypothesis 1**.
+- Since the p-value is below 0.05, the null hypothesis was rejected, it is confirmed that **seasonal differences in average weekly movie attendance are statistically significant**, which supports **Hypothesis 1**.
 
 The **F-statistic** reflects the ratio of between-group variance (seasonal differences) to within-group variance (weekly fluctuations).  
 The result indicates that at least two seasons significantly differ in their average audience numbers.  
@@ -90,9 +93,9 @@ This conclusion was visually supported by the **boxplot**, showing **Winter** as
 
 ##  Hypothesis 2 Evaluation: Genre Popularity Patterns
 
-To assess **Hypothesis 2**, the distribution of movie genres across seasons was analyzed after exploding multi-genre entries. The results showed clear seasonal genre preferences:
+In order to assess **Hypothesis 2**, the distribution of movie genres across seasons was analyzed after exploding multi-genre entries. The results showed clear seasonal genre preferences:
 
-- **Action** and **Adventure** genres dominated **Summer**, aligning with blockbuster release strategies.
+- **Action** and **Adventure** genres were dominated in **Summer**, aligning with blockbuster release strategies.
 - **Drama** and **Thriller** genres were more popular in **Winter**, matching seasonal audience preferences for serious and emotional narratives.
 - **Comedy** maintained stable popularity across the year but slightly increased in **Spring** and **Summer**.
 
@@ -104,11 +107,9 @@ Future work may apply statistical tests to validate these patterns formally.
 ##  Data Visualizations
 
 -  **Bar Charts:** Show average weekly movie attendance by season.
+-  **Boxplots:** Show weekly attendance distribution across seasons, supporting the variance analysis.
 -  **Heatmaps:** Visualize total viewership per genre across seasons.
 -  **Stacked Bar Charts:** Display how each genre contributes to total viewership within each season.
--  **Boxplots:** Show weekly attendance distribution across seasons, supporting the variance analysis.
-
-
 
 
 
