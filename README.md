@@ -58,21 +58,48 @@ The raw data was preprocessed by adding movie genre information from TMDB API, c
   (e.g., **Action** and **Adventure** during Summer, **Drama** and **Thriller** during Winter).
 
 ### Difference Testing Approach:
-- One-way **ANOVA** is applied to test for significant differences in moviegoer numbers across seasons.
-- Genre distribution is analyzed by season to identify popularity patterns.
+##  Difference Testing Approach
+
+- One-way **ANOVA (Analysis of Variance)** was applied to test whether the average weekly movie attendance differs across seasons.
+- **F-statistic:** *8.08*  
+- **p-value:** *0.0000*  
+- Since the p-value is below 0.05, the null hypothesis was rejected, confirming that **seasonal differences in average weekly movie attendance are statistically significant**, which supports **Hypothesis 1**.
+
+The **F-statistic** reflects the ratio of between-group variance (seasonal differences) to within-group variance (weekly fluctuations).  
+The result indicates that at least two seasons significantly differ in their average audience numbers.  
+This conclusion was visually supported by the **boxplot**, showing **Winter** as the season with the highest median weekly attendance and relatively low variability.
 
 ---
 
-## Data Visualization
-- **Bar Charts:** Show average weekly movie attendance by season.
-- **Heatmaps:** Visualize total viewership per genre across seasons.
+##  Hypothesis 2 Evaluation: Genre Popularity Patterns
 
+To assess **Hypothesis 2**, the distribution of movie genres across seasons was analyzed after exploding multi-genre entries. The results showed clear seasonal genre preferences:
+
+- **Action** and **Adventure** genres dominated **Summer**, aligning with blockbuster release strategies.
+- **Drama** and **Thriller** genres were more popular in **Winter**, matching seasonal audience preferences for serious and emotional narratives.
+- **Comedy** maintained stable popularity across the year but slightly increased in **Spring** and **Summer**.
+
+Although no formal statistical test (e.g., chi-square) was applied to genre-season relationships in this project, the descriptive analysis strongly supports Hypothesis 2.  
+Future work may apply statistical tests to validate these patterns formally.
+
+---
+
+##  Data Visualizations
+
+-  **Bar Charts:** Show average weekly movie attendance by season.
+-  **Heatmaps:** Visualize total viewership per genre across seasons.
+-  **Stacked Bar Charts:** Display how each genre contributes to total viewership within each season.
+-  **Boxplots:** Show weekly attendance distribution across seasons, supporting the variance analysis.
 
 ---
 
 ##  Notes
+
 This analysis focuses on the **Top 10 weekly movies**.  
-Although this reflects the dominant commercial trends, niche genres or independent films outside of the Top 10 may not be fully represented.
+Although this reflects the dominant commercial trends, niche genres or independent films outside of the Top 10 may not be fully represented.  
+The methodology can be extended to larger datasets (Top 20, Top 50) or applied to streaming data for future research.
+
+---
 
 ---
 
