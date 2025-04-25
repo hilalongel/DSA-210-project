@@ -10,7 +10,7 @@ This project analyzes the relationship between **seasons**, the **number of movi
 The film industry experiences fluctuations in moviegoer attendance throughout the year.  
 Understanding how **seasons affect movie preferences and audience numbers** can provide valuable insights for movie studios, distributors, and marketers regarding their release strategies.  
 
-Additionally, this topic is personally meaningful to me as I am interested in **data analysis, cinema, and human behavior patterns**.
+Additionally, this topic is personally meaningful for me as I am interested in **data analysis, cinema, and human behavior patterns**.
 
 ---
 ## Hypothesis
