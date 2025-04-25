@@ -2,7 +2,7 @@
 
 ## Project Overview
 I am Hilal Öngel, a Sophomore Computer Science student at Sabanci University. This is my DSA210 project.
-The project analyzes the relationship between **seasons**, the **number of moviegoers**, and the **popularity of movie genres** in Turkey.
+This project analyzes the relationship between **seasons**, the **number of moviegoers**, and the **popularity of movie genres** in Turkey.
 
 ---
 
@@ -25,7 +25,7 @@ Additionally, this topic is personally meaningful to me as I am interested in **
 
 ---
 
-## Data Collection
+## Data Collection and Processing
 - Extract weekly **Top 10 movie data** from Box Office Turkey, including the number of moviegoers.
 - Retrieve **movie genre information** from TMDB API.
 - Categorize weekly data into four Turkish seasons:
@@ -38,9 +38,6 @@ Additionally, this topic is personally meaningful to me as I am interested in **
 ## 🔎 EDA (Exploratory Data Analysis) Methods Used
 
 This project applies several **Exploratory Data Analysis (EDA)** techniques to understand the relationship between seasons, movie attendance, and genre popularity.
-
-The analysis is based on weekly Top 10 box office data (raw data) scraped from Box Office Turkey.
-The raw data was preprocessed by adding movie genre information from TMDB API, categorizing weeks into seasons, and exploding multi-genre entries into separate rows for proper analysis.
 
 ###  1. Grouping and Aggregation
 - Calculated **average weekly moviegoer attendance** across seasons.
