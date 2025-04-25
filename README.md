@@ -1,7 +1,7 @@
 # Seasonal Trends in Movie Viewership and Movie Genres
 
 ## Project Overview
-This is the DSA210 Term Project by **Hilal Öngel**, a Sophomore Computer Science student at Sabancı University.  
+I am Hilal Öngel, a Sophomore Computer Science student at Sabanci University. This is my DSA210 project.
 The project analyzes the relationship between **seasons**, the **number of moviegoers**, and the **popularity of movie genres** in Turkey.
 
 ---
@@ -35,26 +35,46 @@ Additionally, this topic is personally meaningful to me as I am interested in **
   - **Autumn:** Weeks 35–48  
 
 ---
+## 🔎 EDA (Exploratory Data Analysis) Methods Used
 
-## Data Analysis
-- **Viewership Trends:**  
-  Identify seasonal fluctuations in the **average number of moviegoers**.
-- **Genre Popularity:**  
-  Determine which **genres perform better in different seasons**.
-- **Difference Testing (ANOVA):**  
-  Test whether **seasonal differences** in attendance are statistically significant.
+This project applies several **Exploratory Data Analysis (EDA)** techniques to understand the relationship between seasons, movie attendance, and genre popularity.
 
-  The analysis is based on weekly Top 10 box office data (raw data) scraped from Box Office Turkey.
+The analysis is based on weekly Top 10 box office data (raw data) scraped from Box Office Turkey.
 The raw data was preprocessed by adding movie genre information from TMDB API, categorizing weeks into seasons, and exploding multi-genre entries into separate rows for proper analysis.
 
+###  1. Grouping and Aggregation
+- Calculated **average weekly moviegoer attendance** across seasons.
+- Summarized **total viewership by genre and season**.
+- **Tools:** `groupby()`, `mean()`, `sum()`, `pivot()`.
+
+###  2. Data Cleaning and Preprocessing
+- **Movie title cleaning** (removal of release dates, extra spaces).
+- **Genre matching** using TMDB API.
+- **Exploding multi-genre entries** so that each genre appears in a separate row.
+- **Season categorization**: Assigned each week to one of the four seasons (Winter, Spring, Summer, Autumn).
+
+###  3. Descriptive Statistics
+- Used basic statistical measures like **mean, sum, and median**.
+- Supported the identification of seasonal fluctuations and genre preferences.
+
+###  4. Data Visualization
+- **Bar Charts:** Visualized average weekly attendance by season.
+- **Heatmaps:** Showed total viewership per genre across seasons.
+- **Stacked Bar Charts:** Illustrated genre contribution to seasonal attendance.
+- **Boxplots:** Displayed weekly viewership distribution across seasons.
+- **Tools:** `matplotlib`, `seaborn`.
+
+###  5. Statistical Testing (Supporting EDA)
+- Applied **one-way ANOVA (Analysis of Variance)** to statistically test whether the seasonal differences in attendance are significant.
+- Interpreted **F-statistic** and **p-value** to confirm or reject the null hypothesis.
+- This statistical testing strengthened the insights obtained from the visual analysis.
 ---
 
 ## Hypothesis
 
-- **H1:** The average number of moviegoers differs significantly across seasons.  
-  (No assumption is made on which season is highest; the hypothesis tests whether differences exist.)
+- ** Hypothesis 1:** The average number of moviegoers differs significantly across seasons.  
 
-- **H2:** Certain movie genres are more popular during specific seasons  
+- ** Hypothesis 2:** Certain movie genres are more popular during specific seasons  
   (e.g., **Action** and **Adventure** during Summer, **Drama** and **Thriller** during Winter).
 
 ### Difference Testing Approach:
@@ -92,37 +112,7 @@ Future work may apply statistical tests to validate these patterns formally.
 -  **Boxplots:** Show weekly attendance distribution across seasons, supporting the variance analysis.
 
 
----
-## 🔎 EDA (Exploratory Data Analysis) Methods Used
 
-This project applies several **Exploratory Data Analysis (EDA)** techniques to understand the relationship between seasons, movie attendance, and genre popularity.
-
-###  1. Grouping and Aggregation
-- Calculated **average weekly moviegoer attendance** across seasons.
-- Summarized **total viewership by genre and season**.
-- **Tools:** `groupby()`, `mean()`, `sum()`, `pivot()`.
-
-###  2. Data Cleaning and Preprocessing
-- **Movie title cleaning** (removal of release dates, extra spaces).
-- **Genre matching** using TMDB API.
-- **Exploding multi-genre entries** so that each genre appears in a separate row.
-- **Season categorization**: Assigned each week to one of the four seasons (Winter, Spring, Summer, Autumn).
-
-###  3. Descriptive Statistics
-- Used basic statistical measures like **mean, sum, and median**.
-- Supported the identification of seasonal fluctuations and genre preferences.
-
-###  4. Data Visualization
-- **Bar Charts:** Visualized average weekly attendance by season.
-- **Heatmaps:** Showed total viewership per genre across seasons.
-- **Stacked Bar Charts:** Illustrated genre contribution to seasonal attendance.
-- **Boxplots:** Displayed weekly viewership distribution across seasons.
-- **Tools:** `matplotlib`, `seaborn`.
-
-###  5. Statistical Testing (Supporting EDA)
-- Applied **one-way ANOVA (Analysis of Variance)** to statistically test whether the seasonal differences in attendance are significant.
-- Interpreted **F-statistic** and **p-value** to confirm or reject the null hypothesis.
-- This statistical testing strengthened the insights obtained from the visual analysis.
 
 
 ---
