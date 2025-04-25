@@ -15,9 +15,9 @@ Additionally, this topic is personally meaningful for me as I am interested in *
 ---
 ## Hypothesis
 
-###Hypothesis 1: The average number of moviegoers differs significantly across seasons.  
+-Hypothesis 1: The average number of moviegoers differs significantly across seasons.  
 
-###Hypothesis 2: Certain movie genres are more popular during specific seasons  
+-Hypothesis 2: Certain movie genres are more popular during specific seasons  
   (e.g., **Action** and **Adventure** during Summer, **Drama** and **Thriller** during Winter).
 
 ---
