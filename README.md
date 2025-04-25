@@ -44,6 +44,9 @@ Additionally, this topic is personally meaningful to me as I am interested in **
 - **Difference Testing (ANOVA):**  
   Test whether **seasonal differences** in attendance are statistically significant.
 
+  The analysis is based on weekly Top 10 box office data (raw data) scraped from Box Office Turkey.
+The raw data was preprocessed by adding movie genre information from TMDB API, categorizing weeks into seasons, and exploding multi-genre entries into separate rows for proper analysis.
+
 ---
 
 ## Hypothesis
