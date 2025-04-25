@@ -91,8 +91,41 @@ Future work may apply statistical tests to validate these patterns formally.
 -  **Stacked Bar Charts:** Display how each genre contributes to total viewership within each season.
 -  **Boxplots:** Show weekly attendance distribution across seasons, supporting the variance analysis.
 
----
 
+---
+## 🔎 EDA (Exploratory Data Analysis) Methods Used
+
+This project applies several **Exploratory Data Analysis (EDA)** techniques to understand the relationship between seasons, movie attendance, and genre popularity.
+
+###  1. Grouping and Aggregation
+- Calculated **average weekly moviegoer attendance** across seasons.
+- Summarized **total viewership by genre and season**.
+- **Tools:** `groupby()`, `mean()`, `sum()`, `pivot()`.
+
+###  2. Data Cleaning and Preprocessing
+- **Movie title cleaning** (removal of release dates, extra spaces).
+- **Genre matching** using TMDB API.
+- **Exploding multi-genre entries** so that each genre appears in a separate row.
+- **Season categorization**: Assigned each week to one of the four seasons (Winter, Spring, Summer, Autumn).
+
+###  3. Descriptive Statistics
+- Used basic statistical measures like **mean, sum, and median**.
+- Supported the identification of seasonal fluctuations and genre preferences.
+
+###  4. Data Visualization
+- **Bar Charts:** Visualized average weekly attendance by season.
+- **Heatmaps:** Showed total viewership per genre across seasons.
+- **Stacked Bar Charts:** Illustrated genre contribution to seasonal attendance.
+- **Boxplots:** Displayed weekly viewership distribution across seasons.
+- **Tools:** `matplotlib`, `seaborn`.
+
+###  5. Statistical Testing (Supporting EDA)
+- Applied **one-way ANOVA (Analysis of Variance)** to statistically test whether the seasonal differences in attendance are significant.
+- Interpreted **F-statistic** and **p-value** to confirm or reject the null hypothesis.
+- This statistical testing strengthened the insights obtained from the visual analysis.
+
+
+---
 ##  Notes
 
 This analysis focuses on the **Top 10 weekly movies**.  
@@ -101,5 +134,5 @@ The methodology can be extended to larger datasets (Top 20, Top 50) or applied t
 
 ---
 
----
+
 
