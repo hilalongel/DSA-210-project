@@ -1,57 +1,75 @@
 # Seasonal Trends in Movie Viewership and Movie Genres
 
-I am  Hilal Öngel. I am a Sophomore Computer Science student at Sabanci University, and this is my DSA210 term project. This project aims to analyze the relationship between seasons, the number of moviegoers, and the popularity of different movie genres in Turkey.
+## Project Overview
+This is the DSA210 Term Project by **Hilal Öngel**, a Sophomore Computer Science student at Sabancı University.  
+The project analyzes the relationship between **seasons**, the **number of moviegoers**, and the **popularity of movie genres** in Turkey.
 
-## 1.	Motivation
+---
 
-The film industry experiences fluctuations in moviegoer attendance throughout the year. Understanding how seasons affect movie preferences and number of moviegoers could provide valuable insights for movie studios, distributors, and marketers. Additionally, this could be an entertaining and inspiring project topic for me since I am interested in.
+## Motivation
+The film industry experiences fluctuations in moviegoer attendance throughout the year.  
+Understanding how **seasons affect movie preferences and audience numbers** can provide valuable insights for movie studios, distributors, and marketers regarding their release strategies.  
 
-##  2.	Data Sources
+Additionally, this topic is personally meaningful to me as I am interested in **data analysis, cinema, and human behavior patterns**.
 
-• Box Office Turkey (https://boxofficeturkiye.com/)
+---
 
-o Weekly and yearly moviegoer data
+## Data Sources
+- **Box Office Turkey**  
+  Weekly Top 10 movies and their audience numbers.  
+  [https://boxofficeturkiye.com/](https://boxofficeturkiye.com/)
 
-o Number of viewers per film
+- **TMDB (The Movie Database) API**  
+  Movie genre classification data.  
+  [https://developer.themoviedb.org/reference/intro](https://developer.themoviedb.org/reference/intro)
 
-• IMDb (https://developer.themoviedb.org/reference/intro)
+---
 
-o Movie genre classification
+## Data Collection
+- Extract weekly **Top 10 movie data** from Box Office Turkey, including the number of moviegoers.
+- Retrieve **movie genre information** from TMDB API.
+- Categorize weekly data into four Turkish seasons:
+  - **Winter:** Weeks 1–8 and 49–52  
+  - **Spring:** Weeks 9–21  
+  - **Summer:** Weeks 22–34  
+  - **Autumn:** Weeks 35–48  
+
+---
+
+## Data Analysis
+- **Viewership Trends:**  
+  Identify seasonal fluctuations in the **average number of moviegoers**.
+- **Genre Popularity:**  
+  Determine which **genres perform better in different seasons**.
+- **Difference Testing (ANOVA):**  
+  Test whether **seasonal differences** in attendance are statistically significant.
+
+---
+
+## Hypothesis
+
+- **H1:** The average number of moviegoers differs significantly across seasons.  
+  (No assumption is made on which season is highest; the hypothesis tests whether differences exist.)
+
+- **H2:** Certain movie genres are more popular during specific seasons  
+  (e.g., **Action** and **Adventure** during Summer, **Drama** and **Thriller** during Winter).
+
+### Difference Testing Approach:
+- One-way **ANOVA** is applied to test for significant differences in moviegoer numbers across seasons.
+- Genre distribution is analyzed by season to identify popularity patterns.
+
+---
+
+## Data Visualization
+- **Bar Charts:** Show average weekly movie attendance by season.
+- **Heatmaps:** Visualize total viewership per genre across seasons.
 
 
-## 3.	Data Collection 
-   
-• Extract weekly moviegoer data from Box Office Turkey. Extract weekly top 10 movies and numbers of movigoers for these movies.
+---
 
-• Find movie genres from IMDb.
+##  Notes
+This analysis focuses on the **Top 10 weekly movies**.  
+Although this reflects the dominant commercial trends, niche genres or independent films outside of the Top 10 may not be fully represented.
 
-• Categorize weekly data into four seasons of Turkey.
-
-
-## 4. Data Analysis 
-• Viewership Trends: Identify seasonal fluctuations in the number of moviegoers.
-
-• Genre Popularity: Determine which genres perform better in different seasons.
-
-##  5.	Hypothesis  
-   
-**• Hypothesis 1:** The number of moviegoers differs significantly across seasons, with higher attendance in the summer and lower attendance in the winter.
-
-**• Hypothesis 2:** Certain movie genres are more popular during specific seasons (e.g., summer for comedy movies, winter for drama movies).
-
-
-### Correlation Analysis: 
-
-• Measure the relationship between seasons and movie genres.
-
-• Determine correlation if seasonal differences in viewership are statistically significant.
-
-
-## 6.	Data Visualization
-
-• Time Series Plots: Show viewership trends across four seasons.
-
-• Bar Charts: Compare the popularity of different genres by season.
-
-• Heatmaps: Display correlations between seasons, viewership, and genres.
+---
 
