@@ -61,8 +61,8 @@ The raw data was preprocessed by adding movie genre information from TMDB API, c
 ##  Difference Testing Approach
 
 - One-way **ANOVA (Analysis of Variance)** was applied to test whether the average weekly movie attendance differs across seasons.
-- **F-statistic:** *8.08*  
-- **p-value:** *0.0000*  
+- **F-statistic:** 8.08  
+- **p-value:** 0.0000
 - Since the p-value is below 0.05, the null hypothesis was rejected, confirming that **seasonal differences in average weekly movie attendance are statistically significant**, which supports **Hypothesis 1**.
 
 The **F-statistic** reflects the ratio of between-group variance (seasonal differences) to within-group variance (weekly fluctuations).  
