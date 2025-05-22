@@ -231,6 +231,29 @@ These visuals show that the model performs consistently across weeks and genres.
 
 The model adds a **predictive and applied layer** to the previously descriptive analysis.
 
+##  Future Work
+
+To improve and expand this project, the following steps could be studied:
+
+-  **Expand Dataset Scope**  
+  Instead of Top 10 weekly movies, consider Top 20 or Top 50 to include more diversity and genre variability.
+
+-  **Apply Statistical Tests on Genre-Season Relationships**  
+  While Hypothesis 2 was supported visually, a chi-square test or regression interaction term could strengthen this finding.
+
+-  **Integrate Streaming Data**  
+  Analyze how seasonal patterns differ between cinema and digital platforms like Netflix or BluTV.
+
+-  **Use Official Holiday Calendars**  
+  Improve the `IsHolidayWeek` feature by incorporating actual national holiday dates rather than manual week tagging.
+
+-  **Experiment with Other ML Models**  
+  Try advanced ML models for comparison and possibly higher predictive performance.
+
+-  **Deploy as Interactive Tool**  
+  Build a dashboard where users can input a movie’s genre and release week to see expected attendance.
+
+
 
 
 
