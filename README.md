@@ -120,7 +120,7 @@ The methodology can be extended to larger datasets (Top 20, Top 50) or applied t
 
 ---
 
-## 🤖 Machine Learning
+##  Machine Learning
 
 This project includes a **regression model** that predicts the number of weekly moviegoers using the following features:
 
@@ -138,7 +138,7 @@ This project includes a **regression model** that predicts the number of weekly 
 
 ---
 
-## 🔁 Modeling Process
+##  Modeling Process
 
 1. The target variable `Viewers` was **log-transformed** using `np.log1p()` for better distribution.
 2. A **Random Forest Regressor** was trained using one-hot encoded categorical features and numeric ones.
