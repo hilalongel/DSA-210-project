@@ -2,7 +2,8 @@
 
 ## Project Overview
 I am Hilal Öngel, a Sophomore Computer Science student at Sabanci University. This is my DSA210 project.
-This project analyzes the relationship between **seasons**, the **number of moviegoers**, and the **popularity of movie genres** in Turkey.
+This project analyzes the relationship between **seasons**, the **number of moviegoers**, and the **popularity of movie genres** in Turkey. It combines Exploratory Data Analysis (EDA), hypothesis testing (ANOVA), and a supervised machine learning model (Random Forest Regressor) to uncover trends and make predictions.  The final model explains over **71% of the variance** in weekly moviegoer numbers, demonstrating strong predictive power from seasonal and genre-based variables.
+
 
 ---
 
