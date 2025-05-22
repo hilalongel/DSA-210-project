@@ -120,5 +120,67 @@ The methodology can be extended to larger datasets (Top 20, Top 50) or applied t
 
 ---
 
+## 🤖 Machine Learning
+
+This project includes a **regression model** that predicts the number of weekly moviegoers using the following features:
+
+- **Season**
+- **Genres**
+- **Week**, **Year**
+- Engineered Features:
+  - `Movie_Rank`: film’s position within Top 10
+  - `IsHolidayWeek`: whether the week includes a holiday
+  - `GenreCount`: number of genres (1 for exploded data)
+
+
+> While this model is not deployed as an input-output tool, it can be used to evaluate expected viewership patterns based on historical trends, genre, season, and week number.
+
+
+---
+
+## 🔁 Modeling Process
+
+1. The target variable `Viewers` was **log-transformed** using `np.log1p()` for better distribution.
+2. A **Random Forest Regressor** was trained using one-hot encoded categorical features and numeric ones.
+3. After prediction, the values were **inverse-transformed** with `np.expm1()` to return to original scale.
+4. Model was evaluated using MAE, RMSE, and R² metrics.
+
+---
+
+## Model Performance
+
+| Metric   | Value     |
+|----------|-----------|
+| **MAE**  | ~60.29     |
+| **RMSE** | ~89.09     |
+| **R²**   | **0.7107** 
+
+This indicates that the model explains over **71% of the variance** in weekly moviegoer numbers.
+
+---
+
+##  Visual Results
+
+- **Scatter Plot** of Actual vs Predicted Viewers:  
+![indir](https://github.com/user-attachments/assets/ce227513-af6d-4229-87e6-a109a307a37b)
+
+
+- **Bar Chart** of Weekly Average (Actual vs Predicted):  
+![indir (1)](https://github.com/user-attachments/assets/870aa296-2b64-460f-a2c8-9e201a9e0c8d)
+
+
+These visuals show that the model performs consistently across weeks and genres.
+
+---
+
+##  Insights Gained from ML
+
+- Which features are most predictive? (`Movie_Rank`, `Genre`, `Season`)
+- How close are the model’s predictions to actual viewership?
+- Can we use this for real-world scheduling or marketing?
+
+The model adds a **predictive and applied layer** to the previously descriptive analysis.
+
+
 
 
