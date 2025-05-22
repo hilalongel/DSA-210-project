@@ -122,6 +122,9 @@ The methodology can be extended to larger datasets (Top 20, Top 50) or applied t
 
 ##  Machine Learning
 
+To move beyond descriptive statistics, this project incorporates a supervised learning model to **predict weekly moviegoer numbers**.  
+By combining categorical and temporal features with engineered variables, the model learns patterns that influence audience attendance.
+
 This project includes a **regression model** that predicts the number of weekly moviegoers using the following features:
 
 - **Season**
@@ -133,17 +136,63 @@ This project includes a **regression model** that predicts the number of weekly 
   - `GenreCount`: number of genres (1 for exploded data)
 
 
-> While this model is not deployed as an input-output tool, it can be used to evaluate expected viewership patterns based on historical trends, genre, season, and week number.
-
+####  `Movie_Rank`
+- **What it is:** Position of a movie in the weekly Top 10 list (1 = highest, 10 = lowest)  
+- **Why it matters:** Higher-ranked movies typically receive more attention.
+```
+df['Movie_Rank'] = df.groupby(['Year', 'Week']).cumcount() + 1
+```
 
 ---
 
-##  Modeling Process
+####  `IsHolidayWeek`
+- **What it is:** 1 if the release falls on a holiday-heavy week (weeks 1–2, 26–31, 52), else 0  
+- **Why it matters:** Holidays tend to attract more viewers.
+```
+holiday_weeks = list(range(1, 3)) + list(range(26, 32)) + [52]
+df['IsHolidayWeek'] = df['Week'].apply(lambda x: 1 if x in holiday_weeks else 0)
+```
 
-1. The target variable `Viewers` was **log-transformed** using `np.log1p()` for better distribution.
-2. A **Random Forest Regressor** was trained using one-hot encoded categorical features and numeric ones.
-3. After prediction, the values were **inverse-transformed** with `np.expm1()` to return to original scale.
-4. Model was evaluated using MAE, RMSE, and R² metrics.
+---
+
+####  `GenreCount`
+- **What it is:** Count of genres assigned (always 1 in this exploded dataset)  
+- **Why it matters:** Placeholder for future multi-genre improvements
+```
+df['GenreCount'] = 1
+```
+
+---
+
+####  `Log_Viewers` (Transformed Target)
+- **What it is:** Log-transformed version of `Viewers` using `np.log1p`  
+- **Why it matters:** Reduces skew and improves learning
+```
+df['Log_Viewers'] = np.log1p(df['Viewers'])
+```
+
+---
+
+####  One-Hot Encoded Categorical Features
+- `Season` → Winter, Spring, Summer, Autumn  
+- `Genres_List` → Action, Drama, Comedy, etc.  
+Used to capture non-numeric relationships.
+
+```
+from sklearn.preprocessing import OneHotEncoder
+encoder = OneHotEncoder(sparse=False, handle_unknown='ignore')
+encoded = encoder.fit_transform(df[['Season', 'Genres_List']])
+```
+
+---
+
+###  Modeling Pipeline
+
+1. Features were engineered and encoded.
+2. The target `Viewers` was log-transformed to improve learning.
+3. A **Random Forest Regressor** was trained and evaluated.
+4. Predictions were inverse-transformed using `np.expm1()`.
+5. Model was evaluated using MAE, RMSE, and R² metrics.
 
 ---
 
