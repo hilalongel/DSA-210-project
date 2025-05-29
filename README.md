@@ -14,7 +14,7 @@ Seasonal fluctuations in movie attendance are a well-documented phenomenon in th
 Moreover, the topic aligns with my academic and personal interests in data science, cinema, and behavioral analysis, offering a unique opportunity to apply technical skills to cultural patterns.
 
 ---
-## Hypothesis
+## Hypotheses
 
 -Hypothesis 1: The average number of moviegoers differs significantly across seasons.  
 
