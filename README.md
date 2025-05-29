@@ -126,6 +126,23 @@ The methodology can be extended to larger datasets (Top 20, Top 50) or applied t
 To move beyond descriptive statistics, this project incorporates a supervised learning model to **predict weekly moviegoer numbers**.  
 By combining categorical and temporal features with engineered variables, the model learns patterns that influence audience attendance.
 
+## Model Comparison Insights
+
+To support model selection with empirical evidence, three different models were evaluated:
+
+| Model              | MAE   | RMSE   | R²     |
+|-------------------|--------|--------|--------|
+| Random Forest      | 60.29 | 89.09  | 0.7107 |
+| Decision Tree      | 65.47 | 99.88  | 0.6254 |
+| Linear Regression  | 71.83 | 105.12 | 0.5962 |
+
+- **MAE (Mean Absolute Error)** indicates how much, on average, the model's predictions deviate from actual values.  
+- **RMSE (Root Mean Squared Error)** penalizes larger errors more severely and is thus more sensitive to outliers.  
+- **R² (Coefficient of Determination)** measures how well the model explains the variance in the target variable.
+
+> Random Forest achieved the **lowest MAE and RMSE**, as well as the **highest R² score**, indicating not only the most accurate average predictions but also the best ability to capture general patterns in the data. This makes it the most suitable model for the final predictive task.
+
+
 This project includes a **regression model** that predicts the number of weekly moviegoers using the following features:
 
 - **Season**
