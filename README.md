@@ -3,15 +3,15 @@
 ## Project Overview
 I am Hilal Öngel, a Sophomore Computer Science student at Sabanci University. This is my DSA210 project.
 This project analyzes the relationship between **seasons**, the **number of moviegoers**, and the **popularity of movie genres** in Turkey. It combines Exploratory Data Analysis (EDA), hypothesis testing (ANOVA), and a supervised machine learning model (Random Forest Regressor) to uncover trends and make predictions.  The final model explains over **71% of the variance** in weekly moviegoer numbers, demonstrating strong predictive power from seasonal and genre-based variables.
+To ensure methodological rigor, alternative models such as Linear Regression and Decision Tree Regressor were also implemented. However, Random Forest consistently outperformed them, particularly in terms of R² score, justifying its selection as the final model.
 
 
 ---
 
 ## Motivation
-The film industry experiences fluctuations in moviegoer attendance throughout the year.  
-Understanding how **seasons affect movie preferences and audience numbers** can provide valuable insights for movie studios, distributors, and marketers regarding their release strategies.  
+Seasonal fluctuations in movie attendance are a well-documented phenomenon in the film industry. Understanding how audience behavior varies by season and genre provides critical insights for distributors, studios, and marketing strategists. This analysis can inform release schedules and content planning.
 
-Additionally, this topic is personally meaningful for me as I am interested in **data analysis, cinema, and human behavior patterns**.
+Moreover, the topic aligns with my academic and personal interests in data science, cinema, and behavioral analysis, offering a unique opportunity to apply technical skills to cultural patterns.
 
 ---
 ## Hypothesis
